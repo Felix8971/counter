@@ -8,7 +8,7 @@ import reducer from './reducers';//This works because there is a ../reducers/ind
 // index.js file automatically.
 
 const store = createStore(reducer);//store has 3 methodes: getState(), dispatch(), subscribe()
-//we are going to use them bellow
+//we are going to use them below
 
 const render = () => ReactDOM.render(
   <Counter
