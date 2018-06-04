@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types' //used to define the type of props bellow, we will see an error if we don't respect these types
+import PropTypes from 'prop-types' //used to define the type of props bellow, we will see a warning if we don't respect these types
 
 
 class Counter extends Component {
