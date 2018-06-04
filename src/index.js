@@ -21,6 +21,7 @@ const render = () => ReactDOM.render(
 
 render()// calling once to render the initial state (0), then the subscribe will update subsequently
 
-store.subscribe(render)//subscribe() registers a callback that the redux store will call any time 
-//an action has been dispatched so you can update the UI of your 
+store.subscribe(render); //the store will execute render any time 
+//an action will be dispatched so we can update the UI of our 
 //application to reflect the current application state.
+
