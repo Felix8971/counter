@@ -1,14 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { createStore } from 'redux'
+import { createStore } from 'redux' // npm module syntax
 import Counter from './components/Counter'
-
-import counter from './reducers';//This works because there is a ../reducers/index.js file
+import reducer from './reducers';//This works because there is a ../reducers/index.js file
 // with an export default statement and webpack transcodes the import statement into 
 // a require statement and webpack supports the node standard of looking for an
 // index.js file automatically.
 
-const store = createStore(counter);
+const store = createStore(reducer);//store has 3 methodes: getState(), dispatch(), subscribe()
 
 const render = () => ReactDOM.render(
   <Counter

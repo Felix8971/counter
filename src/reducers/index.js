@@ -1,4 +1,6 @@
-export default (state = 0, action) => {
+
+
+export default (state = 0, action) => {//si state undefined on la met à zero
   switch (action.type) {
     case 'INCREMENT':
       return state + 1
