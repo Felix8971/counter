@@ -1,6 +1,6 @@
 
 
-export default (state = 0, action) => {//si state undefined on la met à zero
+export default (state = 0, action) => {//we simply use 0 if state is undefined (ECMAScript 2015)
   switch (action.type) {
     case 'INCREMENT':
       return state + 1
