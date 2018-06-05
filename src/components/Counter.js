@@ -44,16 +44,10 @@ class Counter extends Component {
         <button onClick={onIncrement}> {/* ou onClick={this.props.onIncrement} si on a pas créé la variable onIncrement */}
 
         {/* 
-        
           onIncrement vaut: () => store.dispatch({ type: 'INCREMENT' }) -> voir component parent
-          donc au clic on envoit une action vers le reducer (voir ../reducers/index.js)
-          qui va retourner un nouveau state au store
-
-          Le fait d'avoir ecrit : 
-           const store = createStore(reducer);
-           et 
-           store.subscribe(render)
-           fait que au moment où le dispatch sera lancé react va actualiser la vue avec le nouveau state  
+          donc au clic on envoit une action vers le store qui va demander au  reducer (voir ../reducers/index.js)
+          de lui retourner un nouveau state et mettre à jourt la vue.
+          voir const store = createStore(reducer);  et store.subscribe(render)
         */}
           +
         </button>
